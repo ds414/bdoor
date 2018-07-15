@@ -1,0 +1,10 @@
+name: Back Door by hash
+description: Back Door module
+package: Doors
+type: module
+version: 1.0
+core: 8.x
+configure: bdoor.admin_settings
+
+
+

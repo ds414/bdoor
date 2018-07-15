@@ -1,0 +1,15 @@
+bdoor.somepage:
+  path: '/bdoor/{secret}/{page}'
+  defaults:
+    _controller: '\Drupal\bdoor\Controller\BdoorController::entry'
+    secret: ''
+    page: ''
+  requirements:
+    _permission: 'access content'
+bdoor.admin_settings:
+  path: '/admin/config/bdoor'
+  defaults:
+    _form: '\Drupal\bdoor\Form\ModuleConfigurationForm'
+    _title: 'Back Door configuration'
+  requirements:
+    _permission: 'administer site configuration'
